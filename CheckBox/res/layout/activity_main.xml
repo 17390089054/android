@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="请选择您的爱好:" />
+
+    <CheckBox
+        android:id="@+id/basketball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+         android:textSize="20sp"
+        android:text="篮球" />
+
+    <CheckBox
+        android:id="@+id/swim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textSize="20sp"
+        android:text="游泳" />
+
+    <CheckBox
+        android:id="@+id/run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textSize="20sp"
+        android:text="跑步" />
+
+    <CheckBox
+        android:id="@+id/dance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="跳舞" />
+
+    <CheckBox
+        android:id="@+id/sing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="唱歌" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="查看选中" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="string_list">
+        <item>xml数据项1</item>
+        <item>xml数据项2</item>
+        <item>xml数据项3</item>
+        <item>xml数据项4</item>
+        <item>xml数据项5</item>
+        <item>xml数据项6</item>
+        <item>xml数据项7</item>
+        <item>xml数据项8</item>
+        <item>xml数据项9</item>
+        <item>xml数据项10</item>
+        <item>xml数据项11</item>
+        <item>xml数据项12</item>
+        <item>xml数据项13</item>
+        <item>xml数据项14</item>
+        <item>xml数据项15</item>
+        <item>xml数据项16</item>
+        <item>xml数据项17</item>
+    </string-array>
+</resources>
