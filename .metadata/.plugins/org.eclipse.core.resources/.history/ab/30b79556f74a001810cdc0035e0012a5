@@ -1,0 +1,120 @@
+package com.example.progressdialog;
+
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Handler.Callback;
+import android.os.Message;
+import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+
+	private TextView tv;
+	/*private Handler handler=new Handler(){
+			@Override
+			public void handleMessage(Message msg) {
+			}
+		
+	};*/
+	private Handler handler=new Handler(new Callback() {
+		@Override
+		public boolean handleMessage(Message msg) {
+			ProgressDialog dialog=(ProgressDialog) msg.obj;
+			//dialog.setProgress(msg.arg1);
+			dialog.incrementProgressBy(1);
+			if(dialog.getProgress()==dialog.getMax()){
+				dialog.cancel();
+				tv.setText("下载成功!!!");
+			}
+			
+			
+			
+			//取消对话框
+			/*dialog.cancel();
+			if(msg.arg1==1){
+				tv.setText("下载成功!!!");
+			}else{
+				tv.setText("下载失败!!!");
+			}*/
+			return false;
+		}
+	});
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        tv=(TextView) findViewById(R.id.tv);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    //进度对话框
+    public void test(View v){
+    	final ProgressDialog pg=new ProgressDialog(MainActivity.this);
+    	pg.setTitle("普通对话框");
+    	pg.setMessage("正在下载...");
+    	pg.show();
+    	//执行耗时任务需要定义多线程
+    	new Thread(new Runnable() {
+			@Override
+			public void run() {
+				try {
+					Thread.sleep(2000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				//更新UI组件 取消对话框 显示提示文本
+				Message msg=new Message();
+				msg.obj=pg;
+				msg.arg1=2;//1 代表下载成功! 2 代表下载失败!
+				//Bundle bundle = msg.getData();//类似于map的容器 键值类型为String
+				handler.sendMessage(msg);
+			}
+		}).start();
+    	
+    	
+    }
+    
+    public void test02(View v){
+    	final ProgressDialog pg=new ProgressDialog(MainActivity.this);
+    	pg.setTitle("下载对话框");
+    	pg.setMessage("正在下载>>>");
+    	pg.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+    	pg.setMax(100);
+    	//pg.setIndeterminate(true);
+    	pg.show();
+    	new Thread(new Runnable() {
+			@Override
+			public void run() {
+				int i=0;
+				while(i<=pg.getMax()){
+					try {
+						Thread.sleep(500);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					Message msg=new Message();
+					msg.arg1=i;
+					msg.obj=pg;
+					handler.sendMessage(msg);
+					i++;
+				}
+			}
+		}).start();
+    	
+    	
+    	
+    }
+    
+}

@@ -1,0 +1,15 @@
+1524789726824	Move 'index.jsp' to 'lib'
+1524789735040	Move 'index.jsp' to 'view'
+1524801514105	Rename resource 'login.jsp'
+1524804682053	Extract local variable 'account'
+1524804742431	Extract local variable 'password'
+1524804883024	Delete element
+1524804936415	Delete elements
+1524806259597	Extract local variable 'mapper'
+1524806326398	Extract local variable 'user'
+1524806540096	Extract local variable 'user'
+1524823672103	Move 'login2.jsp' to 'WebContent'
+1524835020372	Move 'login2.jsp' to 'WEB-INF'
+1524835024261	Move 'login2.jsp' to 'view'
+1524835434143	Delete element
+1524835439107	Rename resource 'login2.jsp'

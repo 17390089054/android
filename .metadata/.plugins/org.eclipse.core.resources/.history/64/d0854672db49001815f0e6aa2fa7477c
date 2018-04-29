@@ -1,0 +1,5 @@
+package com.wrf.common.servlet;
+
+public class Index extends HttpServlet {
+
+}

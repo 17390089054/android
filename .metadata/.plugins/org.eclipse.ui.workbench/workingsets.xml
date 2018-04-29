@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<<<<<<< HEAD
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1522546607752_0" label="Window Working Set" name="Aggregate for window 1522546607751"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524362505934_1" label="Window Working Set" name="Aggregate for window 1524362505934"/>
+=======
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1523527948185_0" label="Window Working Set" name="Aggregate for window 1523527948183"/>
+<<<<<<< HEAD
+=======
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1523534544058_1" label="Window Working Set" name="Aggregate for window 1523534544058"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524544806039_2" label="Window Working Set" name="Aggregate for window 1524544806039"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524565382452_3" label="Window Working Set" name="Aggregate for window 1524565382452"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524565771886_4" label="Window Working Set" name="Aggregate for window 1524565771886"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524632052823_5" label="Window Working Set" name="Aggregate for window 1524632052823"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524911577573_6" label="Window Working Set" name="Aggregate for window 1524911577573"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524967596089_7" label="Window Working Set" name="Aggregate for window 1524967596089"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524970390841_8" label="Window Working Set" name="Aggregate for window 1524970390841"/>
+>>>>>>> android开发
+>>>>>>> 安卓项目开发
 </workingSetManager>

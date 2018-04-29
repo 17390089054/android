@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>\u6D4B\u8BD5&\#x0A;&\#x0A;Change-Id\: I0000000000000000000000000000000000000000&\#x0A;Signed-off-by\: 17390089054 &lt;2823863294@qq.com&gt;&\#x0A;</message>\r\n<message>\u4E2A\u5730\u65B9</message>\r\n</messages>
+eclipse.preferences.version=1
+=======
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>\u8FDB\u5EA6\u6761</message>\r\n<message>dfsdf</message>\r\n<message>\u6D4B\u8BD5</message>\r\n<message>\u54C8\u54C8\u54C8</message>\r\n<message>\u8FD9\u662F\u6D4B\u8BD5</message>\r\n<message>\u5B89\u5353\u9879\u76EE\u5F00\u53D1&\#x0A;&\#x0A;Change-Id\: I0000000000000000000000000000000000000000&\#x0A;Signed-off-by\: knight&\#x0A;</message>\r\n</messages>
+eclipse.preferences.version=1
+merge_mode=0
+show_initial_config_dialog=false
+>>>>>>> 安卓项目开发

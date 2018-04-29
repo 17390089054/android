@@ -1,0 +1,5 @@
+package com.wrf.user.dao;
+
+public interface UserDao {
+	public User login(@Param("account") String account,@Param("password") password);
+}

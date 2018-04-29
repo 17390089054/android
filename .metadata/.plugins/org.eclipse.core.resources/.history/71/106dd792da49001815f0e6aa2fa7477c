@@ -1,0 +1,29 @@
+package com.wrf.user.service;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.wrf.common.util.MyBatisUtil;
+import com.wrf.user.dao.UserDao;
+import com.wrf.user.model.User;
+
+public class UserService {
+	SqlSession sqlSession=null;
+	
+	/**
+	 *用户登录主方法
+	 *
+	 */
+	public User login(String account,String password){
+		try {
+			sqlSession=MyBatisUtil.getSqlSession();
+			UserDao userDao = sqlSession.getMapper(UserDao.class);
+			User user = userDao.login(account, password);
+			if(user!=null){
+				return user;
+			}
+		}finally{
+			MyBatisUtil.closeSqlSession(sqlSession);
+		}
+	return null;
+	}
+}

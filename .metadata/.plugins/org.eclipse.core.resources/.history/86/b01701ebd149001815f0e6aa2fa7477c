@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>用户登录</title>
+</head>
+<body>
+	<form action="Login" method="post" id="myForm" >
+		<input type="text" name="account" placeholder="请输入账号" onfocus="clearError()"/>	<br/>
+		<input type="password" name="password" placeholder="请输入密码" onfocus="clearError()"/><br/>
+		<input type="button" value="登录" onclick="toSub()"/>
+		<span id="msg" style="color:#ff0000;font-size:25px"></span>
+	</form>
+	<script src="resource/js/jquery.min.js"></script>
+	<script>
+		//提交方法
+		function toSub(){
+			//获取输入框数据
+			var account=$.trim($("input[name='account']").val());
+			var password=$.trim($(":password").val());
+			//校验数据是否为空
+			if(!account){
+				$("#msg").html("账号不能为空!");
+				$("input[name='account']").focus();
+				return;
+			}
+			if(!password){
+				$("#msg").html("密码不能为空!");
+				$("input[name='password']").focus();
+				return;
+			}
+			//提交表单
+			$("#myForm").submit();
+			
+		}
+	
+		//清除错误提示信息
+		function clearError(){
+		
+		}
+	
+	</script>
+	
+</body>
+</html>

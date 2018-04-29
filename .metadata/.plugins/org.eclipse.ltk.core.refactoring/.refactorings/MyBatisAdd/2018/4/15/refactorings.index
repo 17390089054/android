@@ -1,0 +1,5 @@
+1523425837731	Delete element
+1523428795126	Extract local variable 'stream'
+1523428912716	Extract local variable 'sqlSessoinFactory'
+1523428946986	Extract local variable 'sqlSession'
+1523430757992	Rename resource 'log4j.propertites'

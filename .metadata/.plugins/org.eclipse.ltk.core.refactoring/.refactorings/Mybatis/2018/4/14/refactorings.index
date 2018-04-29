@@ -1,0 +1,7 @@
+1522566769419	Extract local variable 'is'
+1522566901959	Extract local variable 'sqlSession'
+1522566968817	Extract local variable 'openSession'
+1522569596505	Extract local variable 'insert'
+1522570318432	Move file
+1522575652493	Extract local variable 'num'
+1522575962711	Extract local variable 'list'

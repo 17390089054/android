@@ -28,7 +28,10 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+<<<<<<< HEAD
         public static final int line=0x7f030001;
+=======
+>>>>>>> android开发
     }
     public static final class menu {
         public static final int main=0x7f070000;

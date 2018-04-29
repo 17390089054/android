@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<<<<<<< HEAD
+<libraryInfo home="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0" version="1.8.0_77">
+<bootpath>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\resources.jar"/>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\rt.jar"/>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\sunrsasign.jar"/>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\jsse.jar"/>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\jce.jar"/>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\charsets.jar"/>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\jfr.jar"/>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="J:\三期工具\三期工具\eclipse开发工具\eclipse\jdk1.8.0\jre\lib\endorsed"/>
+=======
+<libraryInfo home="D:\Java8\jdk1.8.0_121" version="1.8.0_121">
+<bootpath>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\resources.jar"/>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\rt.jar"/>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\sunrsasign.jar"/>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\jsse.jar"/>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\jce.jar"/>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\charsets.jar"/>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\jfr.jar"/>
+<entry path="D:\Java8\jdk1.8.0_121\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\Java8\jdk1.8.0_121\jre\lib\endorsed"/>
+>>>>>>> 安卓项目开发
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

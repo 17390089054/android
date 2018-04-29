@@ -1,0 +1,17 @@
+<classpath>
+  <container id="SpringMVC!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="J:/The Third Method WorlkSpace/SpringMVC/WebContent/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar">
+      <source-attachment-path>J:/三期工具/三期工具/课件/springMVC/框架资源/spring-framework-4.3.6.RELEASE/libs/spring-webmvc-4.3.6.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="SpringMVC页面跳转!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="J:/The Third Method WorlkSpace/SpringMVC页面跳转/WebContent/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar">
+      <source-attachment-path>J:/三期工具/三期工具/课件/springMVC/框架资源/spring-framework-4.3.6.RELEASE/libs/spring-webmvc-4.3.6.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="SpringMVC环境搭建!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="J:/The Third Method WorlkSpace/SpringMVC环境搭建/WebContent/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar">
+      <source-attachment-path>J:/三期工具/三期工具/课件/springMVC/框架资源/spring-framework-4.3.6.RELEASE/libs/spring-webmvc-4.3.6.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

@@ -1,0 +1,23 @@
+package com.wrf.mybatis;
+
+import org.apache.ibatis.session.SqlSession;
+import org.junit.Test;
+
+import com.wrf.dao.RoleDao;
+import com.wrf.tools.MyBatisUtil;
+
+public class MyBatisTest {
+	@Test
+	public void queryUserRole(){
+		SqlSession sqlSession=null;
+		try{
+			sqlSession=MyBatisUtil.getSqlSession();
+			RoleDao roleDao=sqlSession.getMapper(RoleDao.class);
+			roleDao.queryRoleByUserId(2);
+		}finally
+		{
+			MyBatisUtil.closeSqlSession(sqlSession);
+		}
+		
+	}
+}

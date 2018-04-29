@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.wrf.dao.UserDao">
+  	<!-- 返回的数据类型 -->
+ 	<resultMap type="user" id="myUser" >
+	 	<id property="userId"   	javaType="int" jdbcType="INTEGER" column="user_id"/>
+		<result property="userAge"  javaType="int" jdbcType="INTEGER" column="user_age"/>
+		<result property="userName" javaType="java.lang.String" jdbcType="VARCHAR" column="user_name"/>
+		<result property="userSex"  javaType="string" jdbcType="VARCHAR" column="user_sex"/>
+		<result property="account"  javaType="string" jdbcType="VARCHAR" column="account"/>
+		<result property="password" javaType="string" jdbcType="VARCHAR" column="password"/>
+		<result property="userRoleId" javaType="int" jdbcType="INTEGER" 	column="user_role_id"/>
+	</resultMap>  
+	<sql id="user_column"></sql>
+  </mapper>

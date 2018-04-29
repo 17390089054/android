@@ -1,0 +1,13 @@
+package com.wrf.user.service;
+
+import org.apache.ibatis.session.SqlSession;
+
+public class UserService {
+	/**
+	 *用户登录主方法
+	 *
+	 */
+	public void login(String account,String password){
+		SqlSession sqlSession=null;
+	}
+}

@@ -1,0 +1,11 @@
+package com.wrf.user.service;
+
+public class UserService {
+	/**
+	 *用户登录主方法
+	 *
+	 */
+	public void login(String account,String password){
+		sqlSession sqlSession=null;
+	}
+}

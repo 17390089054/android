@@ -1,0 +1,38 @@
+package com.wrf.common.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.wrf.user.service.UserService;
+@WebServlet("/Login")
+public class Login extends HttpServlet {
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.getRequestDispatcher("WEB-INF/view/login.jsp").forward(req, resp);
+	}
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//设置字符编码
+		req.setCharacterEncoding("utf-8");
+		//接收前台参数
+		String account = req.getParameter("account");
+		String password = req.getParameter("password");		
+		//验证用户是否存在
+		UserService us=new UserService();
+		try {
+			us.login(account, password);
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+}

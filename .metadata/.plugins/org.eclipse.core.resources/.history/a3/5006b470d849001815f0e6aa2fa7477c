@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wrf.dao.UserDao">
+	<!-- 返回的数据类型 -->
+	<resultMap type="User" id="myUser">
+		<id property="userId" javaType="int" jdbcType="INTEGER" column="user_id" />
+		<result property="userAge" javaType="int" jdbcType="INTEGER"
+			column="user_age" />
+		<result property="userName" javaType="java.lang.String"
+			jdbcType="VARCHAR" column="user_name" />
+		<result property="userSex" javaType="string" jdbcType="VARCHAR"
+			column="user_sex" />
+		<result property="account" javaType="string" jdbcType="VARCHAR"
+			column="account" />
+		<result property="password" javaType="string" jdbcType="VARCHAR"
+			column="password" />
+		<result property="userRoleId" javaType="int" jdbcType="INTEGER"
+			column="user_role_id" />
+	</resultMap>
+	
+	<!-- 方式一 -->
+	<resultMap type="User" id="myRoleUser" extends="myUser">
+		<association 
+			property="role"
+			javaType="com.wrf.user.model.Role"
+			resultMap="com.wrf.dao.RoleDao.userRole"
+		/>
+		
+	</resultMap>
+
+	<!---方式二-->
+<!-- 
+	<resultMap type="User" id="myRoleUser" extends="myUser">
+	继承实现复用  association用于指定返回的类型和数据类型
+		<association property="role" javaType="Role">
+			<id property="roleId" javaType="int" jdbcType="INTEGER" column="role_id" />
+			<result property="roleName" javaType="string" jdbcType="VARCHAR"
+				column="role_name" />
+			<result property="roleStatus" javaType="int" jdbcType="INTEGER"
+				column="role_status" />
+			<result property="roleDesc" javaType="string" jdbcType="VARCHAR"
+				column="role_desc" />
+		
+		</association>
+	</resultMap>
+ -->
+	<!-- sql字段 -->
+	<sql id="user_colum">
+		user_id,user_name,user_sex,user_age,password,account,user_role_id
+	</sql>
+
+	
+</mapper>

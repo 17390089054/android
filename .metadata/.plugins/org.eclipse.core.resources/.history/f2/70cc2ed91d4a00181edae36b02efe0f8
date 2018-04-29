@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>后台管理</title>
+<link href="resource/css/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="login_box">
+		<div class="login_l_img">
+			<img src="resource/images/login-img.png" />
+		</div>
+		<div class="login">
+			<div class="login_logo">
+				<a href="#"><img src="resource/images/login_logo.png" /></a>
+			</div>
+			<div class="login_name">
+				<p>后台管理系统</p>
+			</div>
+			<form>
+				<input name="account" type="text" value="${account}" placeholder="请输入账号"/> 
+				<input name="password" type="password" id="password">
+				<input value="登录" style="width: 100%;" onclick="toSub()"type="button">
+
+			</form>
+		</div>
+	</div>
+	<script src="resource/js/jquery.min.js"></script>
+	<script>
+		function toSub() {
+			/* var account=$("input[name='account']").val();
+			var password=$("input[name='password']").val();
+			console.log(account);
+			console.log(password); */
+			alert(1);
+		}
+	</script>
+</body>
+</html>
+

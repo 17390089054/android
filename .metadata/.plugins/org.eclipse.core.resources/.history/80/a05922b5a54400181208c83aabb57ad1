@@ -1,0 +1,87 @@
+package com.wrf.mybatis;
+
+import org.apache.ibatis.session.SqlSession;
+import com.wrf.dao.UserDao;
+import com.wrf.model.User;
+import com.wrf.tools.MyBatisUtil;
+
+
+public class MyBatisTest {
+	
+	
+	static SqlSession sqlSession=null;
+	
+	public static void main(String[] args) {
+		try{
+			sqlSession= MyBatisUtil.getSqlSession();
+			UserDao mapper = sqlSession.getMapper(UserDao.class);
+			User user=new User();
+			user.setUserName("王");
+			mapper.selectUserList(user);
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally{
+			MyBatisUtil.closeSqlSession(sqlSession);
+		}
+	}
+	
+	public selectUserBy
+	
+	/*public void selectUser(){
+		UserDao dao=new UserDaoImp();
+		List<User> userList = dao.userList();
+		System.out.println(userList);
+	}
+	
+	@Test
+	public void selecUserOne(){
+		UserDao dao=new UserDaoImp();
+		User user = dao.queryUser(2);
+		System.out.println(user);
+		
+	}
+	
+	@Test
+	public void selectUserCondition(){
+		UserDao dao=new UserDaoImp();
+		User user1=new User();
+		user1.setUserName("%"+"张"+"%");
+		List<User>list = dao.selectAlike(user1);
+		System.out.println(list);
+	}
+	
+	@Test
+	public void selectSex(){
+		try {
+			UserDao dao=new UserDaoImp();
+			User user=new User();
+			user.setUserSex("男");
+		System.out.println(dao.selectSex(user));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@Test
+	public void selectUserList(){
+		UserDao dao=new UserDaoImp();
+		User user=new User();
+		user.setUserSex("男");
+		user.setUserAge(12);
+		//user.setUserName("");
+		System.out.println(dao.selectList(user));;
+	}
+	
+	@Test
+	public void update(){
+		UserDao dao=new UserDaoImp();
+		User user=new User();
+		user.setUserSex("男");
+		user.setUserAge(100);
+		user.setUserName("老子");
+		user.setUserId(1);
+		dao.updateUser(user);
+	}*/
+	
+}

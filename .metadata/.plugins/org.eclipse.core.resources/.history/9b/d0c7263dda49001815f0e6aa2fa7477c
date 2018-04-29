@@ -1,0 +1,25 @@
+package com.wrf.user.service;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.wrf.common.util.MyBatisUtil;
+
+public class UserService {
+	
+	SqlSession sqlSession=null;
+	
+	/**
+	 *用户登录主方法
+	 *
+	 */
+	public void login(String account,String password){
+		try {
+			sqlSession=MyBatisUtil.getSqlSession();
+		} catch (Exception e) {
+			
+		}finally{
+			MyBatisUtil.closeSqlSession(sqlSession);
+		}
+	
+	}
+}

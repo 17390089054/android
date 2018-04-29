@@ -1,0 +1,23 @@
+package com.wrf.mybatis;
+
+import org.apache.ibatis.session.SqlSession;
+import org.junit.Test;
+import com.wrf.dao.UserDao;
+import com.wrf.model.User;
+import com.wrf.tools.MyBatisUtil;
+
+public class MyBatisTest {
+	@Test
+	public void queryUser(){
+		SqlSession sqlSession=null;
+		try{
+			sqlSession=MyBatisUtil.getSqlSession();
+			UserDao userDao = sqlSession.getMapper(UserDao.class);
+			System.out.println(user);
+		}finally
+		{
+			MyBatisUtil.closeSqlSession(sqlSession);
+		}
+		
+	}
+}

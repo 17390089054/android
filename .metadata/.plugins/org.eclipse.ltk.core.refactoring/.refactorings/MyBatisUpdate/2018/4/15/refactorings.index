@@ -1,0 +1,9 @@
+1523616597706	Extract local variable 'input'
+1523616814723	Delete element
+1523616825368	Delete element
+1523616940713	Extract local variable 'sqlSession'
+1523618806939	Extract local variable 'map'
+1523619363503	Extract local variable 'num'
+1523620422775	Extract local variable 'list'
+1523620978034	Extract local variable 'user'
+1523628496731	Extract local variable 'instance'

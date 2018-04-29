@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+GitRepositoriesView.GitDirectories=J\:\\The Third Method WorlkSpace\\Mybatis\\.git;
+GitRepositoriesView.GitDirectories.relative=Mybatis\\.git;
+core_autoIgnoreDerivedResources=false
+=======
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=F\:\\Android Develop\\.git;
+=======
+GitRepositoriesView.GitDirectories=
+>>>>>>> android开发
 RepositorySearchDialogSearchPath=F\:\\Android Develop
+>>>>>>> 安卓项目开发
 eclipse.preferences.version=1

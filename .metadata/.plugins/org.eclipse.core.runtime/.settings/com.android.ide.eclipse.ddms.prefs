@@ -1,0 +1,14 @@
+ddms.logcat.auotmonitor.level=error
+ddms.logcat.automonitor.userprompt=true
+devicePanel.Col0=154
+devicePanel.Col1=63
+devicePanel.Col4=93
+eclipse.preferences.version=1
+logcat.view.colsize.Application=189
+logcat.view.colsize.Level=35
+logcat.view.colsize.PID=66
+logcat.view.colsize.TID=66
+logcat.view.colsize.Tag=143
+logcat.view.colsize.Text=748
+logcat.view.colsize.Time=182
+logcat.view.font=1|Lucida Console|10.8|1|WINDOWS|1|-18|0|0|0|700|0|0|0|0|3|2|1|49|Lucida Console;

@@ -1,0 +1,12 @@
+package com.wrf.user.service;
+
+public class UserService {
+	/**
+	 * 
+	 * @param account
+	 * @param password
+	 */
+	public void login(String account,String password){
+		
+	}
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<<<<<<< HEAD
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
+<fullyQualifiedTypeName name="com.wrf.mybatis.MyBatisTest"/>
+<fullyQualifiedTypeName name="com.sun.jmx.mbeanserver.Util"/>
+<fullyQualifiedTypeName name="com.sun.corba.se.impl.javax.rmi.CORBA.Util"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.wrf.tools.MyBatisUtil.Util"/>
+<fullyQualifiedTypeName name="com.wrf.tools.MyBatisUtil.MyBatisUtilHolder"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="sun.awt.shell.Win32ShellFolder2.SystemIcon"/>
+<fullyQualifiedTypeName name="com.wrf.model.User"/>
+<fullyQualifiedTypeName name="com.wrf.model.Role"/>
+<fullyQualifiedTypeName name="com.wrf.tools.MyBatisUtil"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="com.wrf.dao.UserDao"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.annotation.Resources"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
+<fullyQualifiedTypeName name="com.wrf.user.model.User"/>
+<fullyQualifiedTypeName name="com.wrf.common.util.MyBatisUtil"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+=======
+<fullyQualifiedTypeName name="android.webkit.WebView.FindListener"/>
+<fullyQualifiedTypeName name="android.content.res.Resources"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="com.example.prograssbar.MainActivity"/>
+<fullyQualifiedTypeName name="android.widget.ProgressBar"/>
+<fullyQualifiedTypeName name="com.example.progressdialog.MainActivity"/>
+<fullyQualifiedTypeName name="android.view.TextureView"/>
+<fullyQualifiedTypeName name="com.example.progressdialog.R.id"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.Drawable.Callback"/>
+<fullyQualifiedTypeName name="android.media.MediaRouter.Callback"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="android.os.Handler"/>
+<fullyQualifiedTypeName name="android.os.Handler.Callback"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+>>>>>>> 安卓项目开发
+</qualifiedTypeNameHistroy>

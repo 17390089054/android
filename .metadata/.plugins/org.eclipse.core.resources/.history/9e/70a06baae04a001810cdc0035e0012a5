@@ -1,0 +1,38 @@
+package com.example.progressbarapplication;
+import android.os.Bundle;
+import android.os.Handler;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+private ProgressBar progressBar;
+private Handler handler=new Handler();
+boolean flag=true;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        progressBar=(ProgressBar) findViewById(R.id.progressBar);
+        //通过handler通知消息队列修改UI界面内容
+        new Thread(new Runnable() {
+			@Override
+			public void run() {
+				while
+			}
+		}).start();
+        
+        
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}

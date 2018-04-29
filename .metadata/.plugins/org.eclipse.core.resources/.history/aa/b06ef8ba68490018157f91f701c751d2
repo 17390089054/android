@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.wrf.dao.RoleDao">
+ 	<resultMap type="Role" id="userRole" >
+	 	<id property="roleId"   column="role_id"/>
+		<result property="roleName"  column="role_name"/>
+		<result property="roleDesc"  column="role_desc"/>
+		<result property="roleStatus"  column="role_status"/>
+  		<collection 
+  		property="userList"
+		javaType="java.util.List"
+		ofType="com.wrf.model.User"
+  		resultMap="userRole"
+  		/>
+  			
+  		
+  	</resultMap>
+  	
+  	<sql id="role_column">
+		role_id,role_name,role_desc,role_status
+  	</sql>
+  	
+  	<select id="queryRoleByUserId" resultMap="userRole">
+  		SELECT 
+  			<include refid="role_column"/>,<include refid="com.wrf.dao.UserDao.myUser"/>
+  		FROM 
+  			role,user 
+  		WHERE
+  			role_id=user_role_id
+  		AND
+  			 role_id=#{roleId}
+  	</select>
+  </mapper>
