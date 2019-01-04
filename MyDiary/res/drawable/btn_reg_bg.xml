@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 步骤1 创建一个item标签 确定该组件的状态:未按下 -->
+    <item android:state_pressed="false">
+		<!-- 步骤1-1 创建一个shapw标签 显示按钮的样式  -->
+		<shape>
+		    <!-- 设置该组件为实心颜色填充 -->
+		    <solid android:color="#fa3f3f"/>
+		    <!-- 设置描边颜色 -->
+		    <stroke android:width="0.5dp" android:color="#fa3f3f"/>
+		    <!-- 设置边角弧度 -->
+		    <corners android:radius="5dp"/>
+		</shape>
+    </item>
+    <!-- 步骤2 创建一个item标签 确定该组件的状态:已按下 -->
+    <item android:state_pressed="true">
+        <shape>
+	        <!-- 设置该组件为实心颜色填充 -->
+		    <solid android:color="#ff0000"/>
+		    <!-- 设置描边颜色 -->
+		    <stroke android:width="0.5dp" android:color="#ff0000"/>
+		    <!-- 设置边角弧度 -->
+		    <corners android:radius="5dp"/>    
+        </shape>
+    </item>
+
+</selector>

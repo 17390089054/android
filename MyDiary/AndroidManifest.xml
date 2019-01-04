@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.wrf.mydiary.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 窗体的注册 -->
+        <activity
+            android:name="org.wrf.mydiary.activity.LoginActivity"
+            android:label="@string/app_name" >
+
+            <!-- 项目中首先启动的窗体 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 注册自定义窗体 -->
+        <activity
+            android:name="org.wrf.mydiary.activity.RegisterActivity"
+            android:label="新用户注册" >
+        </activity>
+        <!-- 日记列表 -->
+        <activity
+            android:name="org.wrf.mydiary.activity.DiaryActivity"
+            android:label="日记列表" >
+        </activity>
+        <!-- 添加日记 -->
+        <activity
+            android:name="org.wrf.mydiary.activity.AddActivity"
+            android:label="添加日记" >
+        </activity>
+        <!-- 编辑日记 -->
+        <activity
+            android:name="org.wrf.mydiary.activity.EditActivity"
+            android:label="添加日记" >
+        </activity>
+    </application>
+
+</manifest>

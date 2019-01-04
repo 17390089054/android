@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="10dp"
+    android:orientation="vertical" >
+
+    <!-- 线性布局  用于存放注册窗口主体-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_border_bg"
+        android:padding="10dp"
+		android:orientation="vertical"
+         >
+        <!-- 表格布局容器  用于存放登录主窗体-->
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:collapseColumns="2"
+            android:stretchColumns="1" >
+			<!-- 行容器 用于存放交互式组件信息 -->
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="登录账号："
+                    android:textColor="#b88756"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/regAccount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/txt_bg"
+                    android:hint="请输入注册账号"
+                    android:paddingLeft="10dp"
+                    android:textColor="#b88756"
+                    android:textSize="12sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="登录密码："
+                    android:textColor="#b88756"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/regPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/txt_bg"
+                    android:hint="请输入登录密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="#b88756"
+                    android:textSize="12sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="确认密码："
+                    android:textColor="#b88756"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/RegConPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/txt_bg"
+                    android:hint="请输入确认密码"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="#b88756"
+                    android:textSize="12sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        >
+        <Button
+          android:id="@+id/regRegister"
+          android:layout_width="0dp"
+          android:layout_height="35dp" 
+          android:text="立即注册"
+          android:textSize="15sp"
+          android:textColor="#fff"
+          android:layout_weight="1"
+          android:background="@drawable/btn_reg_bg"
+          android:layout_marginRight="5dp"
+            
+            />
+            
+            
+        
+        
+    </LinearLayout>
+
+</LinearLayout>

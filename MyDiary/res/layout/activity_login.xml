@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity" 
+    android:background="@drawable/bg"
+    >
+	<!--步骤1 添加一个TextView 用于显示日记随笔标题 -->
+	<!-- android:layout_width组件的宽  
+    	 android:layout_height组件的高
+    	 android不可少组件
+   	-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="日记随笔v1.0" 
+        android:gravity="center_horizontal"
+        android:textSize="28sp"
+        android:textColor="#b88756"
+        android:layout_marginTop="35dp"
+        />
+    
+    <!-- 步骤2 添加一个TextView 用于显示软件的版权信息  -->
+    <TextView 
+        android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:text="MyDiary copyright wrf"
+		android:gravity="center_horizontal"
+		android:textSize="12sp"
+		android:textColor="#b88756"
+		android:layout_marginBottom="10dp"
+		android:layout_alignParentBottom="true"
+        />
+   <!-- 步骤3 添加一个容器LinearLayout  容器位于正中间 -->
+   <LinearLayout 
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:orientation="vertical"
+	android:background="@drawable/login_border_bg"
+	android:padding="10dp"
+    >
+    <!-- 步骤4 添加一个子容器TableLayout 2行2列 -->
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="2"
+        android:stretchColumns="1"
+        >
+        <!-- 步骤5 添加一个标记TableRow 添加表格的行 -->
+        <TableRow 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            >
+          	<!-- 步骤6  添加一个TextView组件 显示文本 -->
+          	<TextView 
+          	    android:layout_width="wrap_content"
+          	   	android:layout_height="wrap_content"
+          	   	android:text="账号："
+          	   	android:textSize="15sp"
+          	   	android:textColor="#b88756"
+          	    />
+          	<!-- 步骤7 添加一个EditText组件 用于输入文本  注意交互式组件必须添加ID 方便程序操作 -->
+			<EditText 
+			    android:id="@+id/txtAccount"
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:hint="请输入账号"
+			    android:textSize="12sp"
+			    android:textColor="#b88756"
+			    android:background="@drawable/txt_bg"
+			    android:paddingLeft="10dp"
+			    />
+        </TableRow>
+       
+        <!-- 步骤8 添加一个标记TableRow 添加表格的行 密码输入框 -->
+        <TableRow 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+            >
+          	<TextView 
+          	    android:layout_width="wrap_content"
+          	   	android:layout_height="wrap_content"
+          	   	android:text="密码："
+          	   	android:textSize="15sp"
+          	   	android:textColor="#b88756"
+          	    />
+			<EditText 
+			    android:id="@+id/txtPassword"
+			    android:layout_width="fill_parent"
+			    android:layout_height="35dp"
+			    android:inputType="textPassword"
+			    android:hint="请输入密码"
+			    android:textSize="12sp"
+			    android:textColor="#b88756"
+			    android:background="@drawable/txt_bg"
+			    android:paddingLeft="10dp"
+			    />
+        </TableRow>
+    </TableLayout>
+    
+    <!-- 步骤9 添加一个容器LinearLayOut 用于存放按钮组件-->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="10dp"
+        >
+      <!-- 步骤10 添加一个容器Button 用于显示立即注册按钮 -->
+      <Button 
+          android:id="@+id/btnRegister"
+          android:layout_width="0dp"
+          android:layout_height="35dp" 
+          android:text="立即注册"
+          android:textSize="15sp"
+          android:textColor="#fff"
+          android:layout_weight="1"
+          android:background="@drawable/btn_reg_bg"
+          android:layout_marginRight="5dp"
+          />
+       <!-- 步骤11 添加一个容器Button 用于显示登录按钮 -->
+      <Button 
+          android:id="@+id/btnLogin"
+          android:layout_width="0dp"
+          android:layout_height="35dp" 
+          android:text="马上登录"
+          android:textSize="15sp"
+          android:textColor="#fff"
+          android:layout_weight="1"
+          android:background="@drawable/btn_login_bg"
+          android:layout_marginLeft="5dp"
+          />
+      
+        
+        
+    </LinearLayout>
+       
+       
+   </LinearLayout>
+   
+
+</RelativeLayout>
