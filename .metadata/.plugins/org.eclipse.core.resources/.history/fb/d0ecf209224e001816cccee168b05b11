@@ -1,0 +1,194 @@
+package com.example.learning;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+	
+	private Button btn;
+	private EditText school;
+	private EditText grade;
+	private EditText major;
+	private EditText pros;
+	private EditText cons;
+	private RadioGroup group; 
+	private RadioButton boy;
+	private RadioButton girl;
+    private CheckBox sing,playball,book,other;
+	private List<CheckBox>checkBoxList=new ArrayList<CheckBox>();
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+       
+        //初始化控件
+       school=(EditText) findViewById(R.id.school);
+       major=(EditText) findViewById(R.id.major);
+       grade=(EditText) findViewById(R.id.grade);
+       pros=(EditText) findViewById(R.id.pros); 
+       cons=(EditText) findViewById(R.id.cons);
+       //性别框
+       group=(RadioGroup) findViewById(R.id.group); 
+       boy=(RadioButton) findViewById(R.id.boy);
+       girl=(RadioButton)findViewById(R.id.girl);
+       //爱好框
+       sing=(CheckBox) findViewById(R.id.sing);
+       playball=(CheckBox) findViewById(R.id.playball);
+       book=(CheckBox) findViewById(R.id.book);
+       other=(CheckBox) findViewById(R.id.other);
+
+       checkBoxList.add(sing);
+       checkBoxList.add(playball);
+       checkBoxList.add(book);
+       checkBoxList.add(other);
+       
+       btn=(Button) findViewById(R.id.btn);
+       
+       
+       
+       
+       btn.setOnClickListener(new MyListener());
+       
+    
+    }
+    //判断数据是否为空
+    private boolean isBlank(EditText et){
+    	if(et.getText().toString().trim().equals("")){
+    		return true;
+    	}
+    	return false;
+    }
+    //判断性别框是否选中
+    private boolean isChecked(RadioGroup group){
+    	if(!boy.isChecked()&&!girl.isChecked()){
+    		return false;
+    	}    	
+    	return true;
+    	
+    }
+    
+    //判断爱好是否选中
+    private boolean isSelected(){
+    	for(CheckBox checkBox:checkBoxList){
+    		if(checkBox.isChecked()){
+    			return true;
+    		}
+    	}
+    	return false;
+    }
+    
+    //获取爱好内容
+    private String hobbies(){
+    	StringBuilder sb=new StringBuilder();
+    	for(CheckBox checkBox:checkBoxList){
+    		if(checkBox.isChecked()){
+    			sb.append(checkBox.getText().toString()+" ");
+    		}
+    	}
+    	return sb.toString();
+    }
+    
+    
+    
+    /*   btn.setOnClickListener(new OnClickListener() {
+		
+		@Override
+		public void onClick(View arg0) {
+			Toast.makeText(MainActivity.this, "注册成功",Toast.LENGTH_SHORT).show();
+		}
+	});    */
+    
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    private class MyListener implements OnClickListener{
+
+		@Override
+		public void onClick(View v) {
+			//校验数据是否为空
+			if(isBlank(school)){
+				Toast.makeText(MainActivity.this, "学校名称不能为空！", Toast.LENGTH_LONG).show();
+				return;
+			}
+			if(isBlank(grade)){
+				Toast.makeText(MainActivity.this, "年级编号不能为空！", Toast.LENGTH_LONG).show();
+				return;
+			}
+			if(isBlank(major)){
+				Toast.makeText(MainActivity.this, "专业名称不能为空！", Toast.LENGTH_LONG).show();
+				return;
+			}
+			if(isBlank(pros)){
+				Toast.makeText(MainActivity.this, "优势科目不能为空！", Toast.LENGTH_LONG).show();
+				return;
+			}
+			if(isBlank(cons)){
+				Toast.makeText(MainActivity.this, "弱势科目不能为空！", Toast.LENGTH_LONG).show();
+				return;
+			}
+			
+			//校验单选按钮是否选中 监听RadioButton按钮
+			if(isChecked(group)){
+				
+				group.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+					
+					@Override
+					public void onCheckedChanged(RadioGroup group, int checkId) {
+						switch(checkId){
+							case R.id.boy:
+								Toast.makeText(MainActivity.this,"您选择了男！", Toast.LENGTH_SHORT).show();
+								break;
+							case R.id.girl:
+								Toast.makeText(MainActivity.this,"您选择了女！" , Toast.LENGTH_SHORT).show();
+								break;
+						}
+					}
+				});
+				
+			}else{
+				Toast.makeText(MainActivity.this, "请选择性别！", Toast.LENGTH_SHORT).show();
+				return;
+			}
+			
+			//判断爱好选项
+			if(isSelected()){
+				//Toast.makeText(MainActivity.this, "您的爱好为:"+hobbies(), Toast.LENGTH_SHORT).show();
+				Log.i("TAG"，"您的爱好为:"+hobbies());
+			}else{
+				Toast.makeText(MainActivity.this, "请选择爱好！", Toast.LENGTH_SHORT).show();
+				return;
+			}
+			
+			//提示注册成功
+			Toast.makeText(MainActivity.this, "注册成功", Toast.LENGTH_SHORT).show();
+			
+			
+			Intent intent=new Intent(MainActivity.this,SecondActivity.class);
+			startActivity(intent);
+		} 
+    	
+		
+		
+		
+    }
+    
+}

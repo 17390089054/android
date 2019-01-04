@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<user username="李四" phone="123456" />
+	<user username="我是你爸爸" phone="78945" />
+	<user username="你是我儿子" phone="012345" />
+</resources>

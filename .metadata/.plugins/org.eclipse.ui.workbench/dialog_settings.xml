@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item value="9" key="DIALOG_X_ORIGIN"/>
 		<item value="9" key="DIALOG_Y_ORIGIN"/>
@@ -22,10 +23,16 @@
 		<item value="1440" key="dialogWidth"/>
 		<item value="785" key="dialogHeight"/>
 >>>>>>> 安卓项目开发
+=======
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1440" key="dialogWidth"/>
+		<item value="785" key="dialogHeight"/>
+>>>>>>> 安卓练习
 		<list key="orderedProviders">
 		</list>
 		<list key="textArray">
 		</list>
+<<<<<<< HEAD
 <<<<<<< HEAD
 	</section>
 	<section name="NewWizardAction">
@@ -37,14 +44,21 @@
 	</section>
 	<section name="ImportExportAction">
 =======
+=======
+>>>>>>> 安卓练习
 		<list key="orderedElements">
 		</list>
 		<list key="textEntries">
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
+<<<<<<< HEAD
 		<item value="69" key="DIALOG_Y_ORIGIN"/>
 		<item value="9" key="DIALOG_X_ORIGIN"/>
+=======
+		<item value="174" key="DIALOG_Y_ORIGIN"/>
+		<item value="327" key="DIALOG_X_ORIGIN"/>
+>>>>>>> 安卓练习
 	</section>
 	<section name="NewWizardAction">
 		<item value="com.android.ide.eclipse.adt.project.NewProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
@@ -54,14 +68,24 @@
 	</section>
 	<section name="ShowViewDialog">
 		<item value="424" key="DIALOG_WIDTH"/>
+<<<<<<< HEAD
 		<item value="com.android.ide.eclipse.ddms.views.DeviceView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
 		<item value="230" key="DIALOG_Y_ORIGIN"/>
 		<item value="479" key="DIALOG_HEIGHT"/>
 		<item value="757" key="DIALOG_X_ORIGIN"/>
+=======
+		<item value="com.android.ide.eclipse.ddms.views.HeapView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="230" key="DIALOG_Y_ORIGIN"/>
+		<item value="757" key="DIALOG_X_ORIGIN"/>
+		<item value="479" key="DIALOG_HEIGHT"/>
+>>>>>>> 安卓练习
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.android.ide.eclipse.ddms.views.category"/>
 		</list>
+<<<<<<< HEAD
 >>>>>>> 安卓项目开发
+=======
+>>>>>>> 安卓练习
 	</section>
 </section>

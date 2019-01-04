@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1522546607752_0" label="Window Working Set" name="Aggregate for window 1522546607751"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524362505934_1" label="Window Working Set" name="Aggregate for window 1524362505934"/>
 =======
@@ -17,4 +18,7 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1524970390841_8" label="Window Working Set" name="Aggregate for window 1524970390841"/>
 >>>>>>> android开发
 >>>>>>> 安卓项目开发
+=======
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1525138644486_0" label="Window Working Set" name="Aggregate for window 1525138644485"/>
+>>>>>>> 安卓练习
 </workingSetManager>

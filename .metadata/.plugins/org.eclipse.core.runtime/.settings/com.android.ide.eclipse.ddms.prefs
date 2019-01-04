@@ -4,6 +4,26 @@ devicePanel.Col0=154
 devicePanel.Col1=63
 devicePanel.Col4=93
 eclipse.preferences.version=1
+<<<<<<< HEAD
+=======
+emulatorControl.track.comment=105
+emulatorControl.track.count=50
+emulatorControl.track.first=169
+emulatorControl.track.last=169
+emulatorControl.track.name=172
+emulatorControl.waypoint.desc=144
+emulatorControl.waypoint.elevation=72
+emulatorControl.waypoint.latitude=105
+emulatorControl.waypoint.longitude=105
+emulatorControl.waypoint.name=103
+heapPanel.col0=261
+heapPanel.col1=63
+heapPanel.col2=106
+heapPanel.col3=106
+heapPanel.col4=106
+heapPanel.col5=106
+heapPanel.col6=106
+>>>>>>> 安卓练习
 logcat.view.colsize.Application=189
 logcat.view.colsize.Level=35
 logcat.view.colsize.PID=66
@@ -11,4 +31,9 @@ logcat.view.colsize.TID=66
 logcat.view.colsize.Tag=143
 logcat.view.colsize.Text=748
 logcat.view.colsize.Time=182
+<<<<<<< HEAD
 logcat.view.font=1|Lucida Console|10.8|1|WINDOWS|1|-18|0|0|0|700|0|0|0|0|3|2|1|49|Lucida Console;
+=======
+logcat.view.filters.list=name\: 'System.oout', tag\: 'System.oout', text\: '', pid\: '', app\: '', level\: 'info', 
+logcat.view.font=1|Courier New|13.8|0|WINDOWS|1|-23|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+>>>>>>> 安卓练习

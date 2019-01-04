@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
   <uri name="http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_1_0.xsd" uri="jar:file:/J:/三期工具/三期工具/eclipse开发工具/eclipse/plugins/org.eclipse.jpt.common.eclipselink.core_1.3.200.v201603180253.jar!/schemas/eclipselink_orm_1_0.xsd"/>
   <uri name="http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_1_1.xsd" uri="jar:file:/J:/三期工具/三期工具/eclipse开发工具/eclipse/plugins/org.eclipse.jpt.common.eclipselink.core_1.3.200.v201603180253.jar!/schemas/eclipselink_orm_1_1.xsd"/>
@@ -200,6 +201,8 @@
 <<<<<<< HEAD
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"/>
 =======
+=======
+>>>>>>> 安卓练习
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
   <public publicId="-//WAPFORUM//DTD WML 1.1//EN" uri="jar:file:/F:/安卓开发工具/解压使用版/adt-bundle-windows-x86-20130917.467161976/adt-bundle-windows-x86-20130917/eclipse/plugins/org.eclipse.wst.standard.schemas_1.0.401.v201108151912.jar!/dtds/wml11.dtd"/>
   <public publicId="-//W3C//DTD XHTML 1.0 Strict//EN" uri="jar:file:/F:/安卓开发工具/解压使用版/adt-bundle-windows-x86-20130917.467161976/adt-bundle-windows-x86-20130917/eclipse/plugins/org.eclipse.wst.standard.schemas_1.0.401.v201108151912.jar!/dtds/xhtml1-strict.dtd" webURL="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
@@ -227,5 +230,8 @@
   <system systemId="http://www.w3.org/2001/xml.xsd" uri="jar:file:/F:/安卓开发工具/解压使用版/adt-bundle-windows-x86-20130917.467161976/adt-bundle-windows-x86-20130917/eclipse/plugins/org.eclipse.xsd_2.7.1.v20120123-1045.jar!/cache/www.w3.org/2001/xml.xsd"/>
   <uri name="http://www.w3.org/2001/XMLSchema" uri="jar:file:/F:/安卓开发工具/解压使用版/adt-bundle-windows-x86-20130917.467161976/adt-bundle-windows-x86-20130917/eclipse/plugins/org.eclipse.xsd_2.7.1.v20120123-1045.jar!/cache/www.w3.org/2001/XMLSchema.xsd"/>
 </catalog>
+<<<<<<< HEAD
 >>>>>>> android开发
 >>>>>>> 安卓项目开发
+=======
+>>>>>>> 安卓练习

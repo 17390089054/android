@@ -1,0 +1,6 @@
+1525490491163	Copy file
+1525490748937	Rename resource 'strings.xml'
+1525490834987	Extract local variable 'xml'
+1525491122441	Extract local variable 'name'
+1525491284686	Extract local variable 'userName'
+1525491314029	Extract local variable 'attributeValue'

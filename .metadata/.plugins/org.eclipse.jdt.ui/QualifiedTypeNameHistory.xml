@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
 <fullyQualifiedTypeName name="com.wrf.mybatis.MyBatisTest"/>
@@ -42,4 +43,40 @@
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 >>>>>>> 安卓项目开发
+=======
+<fullyQualifiedTypeName name="com.example.learning.MainActivity.MyListener"/>
+<fullyQualifiedTypeName name="com.example.learning.R.layout"/>
+<fullyQualifiedTypeName name="com.example.learning.R.id"/>
+<fullyQualifiedTypeName name="android.widget.RadioGroup.OnCheckedChangeListener"/>
+<fullyQualifiedTypeName name="com.example.learning.MainActivity"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.example.gallery.R.drawable"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="com.example.scrollview.R.id"/>
+<fullyQualifiedTypeName name="android.app.Activity"/>
+<fullyQualifiedTypeName name="android.view.View.OnTouchListener"/>
+<fullyQualifiedTypeName name="com.example.scrollview.MainActivity"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
+<fullyQualifiedTypeName name="com.example.alertdialog.MainActivity"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnMultiChoiceClickListener"/>
+<fullyQualifiedTypeName name="android.app.AlertDialog.Builder"/>
+<fullyQualifiedTypeName name="com.example.alertdialog.R.layout"/>
+<fullyQualifiedTypeName name="com.example.test_xml.R.xml"/>
+<fullyQualifiedTypeName name="android.content.res.XmlResourceParser"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.example.test_drawable.R.drawable"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.support.v4.app.NotificationCompat"/>
+<fullyQualifiedTypeName name="android.support.v4.app.NotificationCompat.Builder"/>
+<fullyQualifiedTypeName name="com.example.test_notification.R.drawable"/>
+<fullyQualifiedTypeName name="android.app.Notification"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.view.Gravity"/>
+<fullyQualifiedTypeName name="android.view.animation.TranslateAnimation"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="com.example.test_ui_thread.MainActivity"/>
+<fullyQualifiedTypeName name="android.os.AsyncTask"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+>>>>>>> 安卓练习
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,85 @@
+package com.example.test_ui_thread;
+
+import android.app.Activity;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.View.OnClickListener;
+import android.view.animation.TranslateAnimation;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+	private Button btn;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		Button button1=(Button) findViewById(R.id.button1);
+		//为按钮设置动画效果  参数:起始坐标 和X Y轴的偏移量
+		//jquery animate
+		TranslateAnimation animation=new TranslateAnimation(0, 200, 0, 0);
+		//设置重复次数
+		animation.setRepeatCount(30);
+		//设置时间间隔
+		animation.setDuration(3000);
+		button1.setAnimation(animation);
+		
+		btn=(Button) findViewById(R.id.button2);
+		btn.setOnClickListener(new OnClickListener() {
+			
+			//方式一:view.post
+			//@Override
+		/*	public void onClick(final View v) {
+				System.out.println("==="+Thread.currentThread().getId());
+				new Thread(new Runnable() {
+					int sum=0;
+					@Override
+					
+					public void run() {
+						System.out.println("===线程开始执行===");
+						try {
+							Thread.sleep(5000);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+						sum+=10;
+					
+					v.post(new Runnable() {
+						
+						@Override
+						public void run() {
+							System.out.println("view.post 开始执行！！！");
+							System.out.println("==="+Thread.currentThread().getId());
+							TextView textView=(TextView)v;
+							textView.setText(""+sum);
+						}
+					});
+					System.out.println("View.post 执行结束！！！");
+					}
+					
+				}).start();
+				System.out.println("===线程执行结束!===");
+			}*/	
+			
+
+		//方式二 ansyt statcker
+		
+			
+		
+		});
+	}
+			
+	private class  DownloadTask extends AsyncTask<String, Void, Void>{
+
+		@Override
+		protected Void doInBackground(String... params) {
+
+			
+			return null;
+		}
+
+	
+	}
+		
+
+}

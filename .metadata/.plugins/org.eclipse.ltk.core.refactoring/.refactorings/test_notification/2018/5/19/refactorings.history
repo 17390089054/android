@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;magaer&apos; from expression &apos;this.getSystemService(Context.NOTIFICATION_SERVICE)&apos;&#x0D;&#x0A;- Original project: &apos;test_notification&apos;&#x0D;&#x0A;- Variable name: &apos;magaer&apos;&#x0D;&#x0A;- Destination method: &apos;com.example.test_notification.MainActivity.test()&apos;&#x0D;&#x0A;- Variable expression: &apos;this.getSystemService(Context.NOTIFICATION_SERVICE)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;magaer&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.example.test_notification{MainActivity.java" name="magaer" replace="true" selection="422 51" stamp="1525656623098" version="1.0"/>
+</session>

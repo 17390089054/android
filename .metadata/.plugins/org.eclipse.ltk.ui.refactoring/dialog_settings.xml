@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<section name="RefactoringWizard.preview">
 		<item value="560" key="width"/>
 		<item value="360" key="height"/>
@@ -17,15 +18,23 @@
 	</section>
 =======
 >>>>>>> 安卓项目开发
+=======
+>>>>>>> 安卓练习
 	<section name="ExtractTempWizard">
 		<item value="true" key="replaceOccurrences"/>
 		<item value="false" key="declareFinal"/>
 	</section>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 安卓练习
 	<section name="RefactoringWizard.preview">
 		<item value="400" key="height"/>
 		<item value="600" key="width"/>
 	</section>
+<<<<<<< HEAD
 >>>>>>> 安卓项目开发
+=======
+>>>>>>> 安卓练习
 </section>

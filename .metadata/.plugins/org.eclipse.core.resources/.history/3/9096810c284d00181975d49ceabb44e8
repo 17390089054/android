@@ -1,0 +1,222 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="用户注册"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="25sp" />
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+         >
+    <!-- school -->
+    <TextView 
+        android:id="@+id/schtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/school"
+        android:text="所在学校:"
+        />    
+     <EditText 
+         android:id="@+id/school"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/schtxt"
+         android:hint="请输入学校名称"
+         android:singleLine="true"
+         /> 
+    <!-- grade -->    
+   <TextView 
+       android:id="@+id/gradetxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:gravity="center"
+       android:layout_alignBaseline="@+id/grade"
+       android:layout_below="@+id/school"
+       android:text="所在年级:"
+       />    
+    <EditText 
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/school"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/gradetxt"
+        android:layout_alignLeft="@+id/school"
+        android:hint="请输入年级名称"
+        android:singleLine="true"
+        /> 
+        
+   <!-- major --> 
+   <TextView 
+       android:id="@+id/majortxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:layout_alignBaseline="@+id/major"
+       android:gravity="center"
+       android:text="所修专业，:"
+       />    
+    <EditText 
+        android:id="@+id/major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:layout_toRightOf="@+id/majortxt"
+		android:layout_below="@+id/grade"   
+		android:layout_alignLeft="@+id/school" 
+		android:layout_marginTop="15dp"	
+        android:singleLine="true"
+        android:hint="请输入专业名称"
+        /> 
+       
+    <!--pros-->
+	<TextView 
+       android:id="@+id/prostxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:gravity="center"
+       android:layout_alignBaseline="@+id/pros"
+       android:layout_below="@+id/major"
+       android:text="擅长科目:"
+       />    
+    <EditText 
+        android:id="@+id/pros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/major"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/prostxt"
+        android:layout_alignLeft="@+id/school"
+        android:hint="请输入您擅长的科目"
+        android:singleLine="true"
+        /> 
+     <!-- cons --> 
+    <TextView 
+       android:id="@+id/constxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="15sp"
+       android:gravity="center"
+       android:layout_alignBaseline="@+id/cons"
+       android:layout_below="@+id/pros"
+       android:text="弱势科目:"
+       />    
+    <EditText 
+        android:id="@+id/cons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pros"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/constxt"
+        android:layout_alignLeft="@+id/school"
+        android:hint="请输入您弱势的科目"
+        android:singleLine="true"
+        /> 
+        
+   </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:layout_marginTop="15dp"
+        >
+    <TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15sp"
+		android:text=" 性     别: "          
+        />
+    <RadioGroup 
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+		<RadioButton 
+		    android:id="@+id/boy"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:text="男"
+		    />      
+	    <RadioButton 
+	    android:id="@+id/girl"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:text="女"
+	    />        
+    </RadioGroup>   
+   </LinearLayout>
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:layout_marginTop="15dp"
+      >
+    <TextView 
+        android:id="@+id/hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 爱      好:"
+        
+        />
+  <CheckBox 
+      android:id="@+id/sing"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+	  android:layout_weight="1"
+      android:text="唱歌"
+      />    
+   
+      
+  <CheckBox 
+      android:id="@+id/playball"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:layout_weight="1"
+      android:text="打球"
+      />    
+      
+  <CheckBox 
+      android:id="@+id/book"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="看书"
+      />    
+  <CheckBox 
+  android:id="@+id/other"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="1"
+  android:text="其他"
+  />    
+      
+      
+  </LinearLayout> 
+  
+	<Button
+	    android:id="@+id/btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    />
+  
+</LinearLayout>

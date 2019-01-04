@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;drawable&apos; from expression &apos;this.getResources().getDrawable(R.drawable.a)&apos;&#x0D;&#x0A;- Original project: &apos;test_drawable&apos;&#x0D;&#x0A;- Variable name: &apos;drawable&apos;&#x0D;&#x0A;- Destination method: &apos;com.example.test_drawable.MainActivity.test01()&apos;&#x0D;&#x0A;- Variable expression: &apos;this.getResources().getDrawable(R.drawable.a)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;drawable&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.example.test_drawable{MainActivity.java" name="drawable" replace="true" selection="386 45" stamp="1525492251943" version="1.0"/>
+</session>

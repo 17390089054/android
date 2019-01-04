@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 content_assist_number_of_computers=25
 =======
 content_assist_number_of_computers=2
 >>>>>>> 安卓项目开发
+=======
+content_assist_number_of_computers=2
+>>>>>>> 安卓练习
 eclipse.preferences.version=1
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

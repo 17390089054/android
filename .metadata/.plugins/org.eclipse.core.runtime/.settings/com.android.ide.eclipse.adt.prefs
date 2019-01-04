@@ -1,9 +1,16 @@
 com.android.ide.eclipse.adt.fixLegacyEditors=1
 <<<<<<< HEAD
+<<<<<<< HEAD
 com.android.ide.eclipse.adt.sdk=L\:\\BaiduNetdiskDownload\\adt-bundle-windows-x86_64-20140702\\sdk
 =======
 com.android.ide.eclipse.adt.sdk=F\:\\\u5B89\u5353\u5F00\u53D1\u5DE5\u5177\\\u89E3\u538B\u4F7F\u7528\u7248\\adt-bundle-windows-x86-20130917.467161976\\adt-bundle-windows-x86-20130917\\sdk
 com.android.ide.eclipse.adt.xmlEditor=true
 design.palette.flyout.width=274
 >>>>>>> android开发
+=======
+com.android.ide.eclipse.adt.sdk=F\:\\\u5B89\u5353\u5F00\u53D1\u5DE5\u5177\\\u89E3\u538B\u4F7F\u7528\u7248\\adt-bundle-windows-x86-20130917.467161976\\adt-bundle-windows-x86-20130917\\sdk
+com.android.ide.eclipse.adt.xmlEditor=true
+com.android.ide.eclipse.editorsResourceExplorer.Col1=220
+com.android.ide.eclipse.editorsResourceExplorer.Col2=105
+>>>>>>> 安卓练习
 eclipse.preferences.version=1

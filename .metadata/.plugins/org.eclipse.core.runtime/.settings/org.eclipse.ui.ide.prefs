@@ -1,5 +1,6 @@
 PROBLEMS_FILTERS_MIGRATE=true
 <<<<<<< HEAD
+<<<<<<< HEAD
 TASKS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
 platformState=1491299429050
@@ -11,5 +12,9 @@ platformState=1523361462844
 platformState=1523534201555
 >>>>>>> android开发
 >>>>>>> 安卓项目开发
+=======
+eclipse.preferences.version=1
+platformState=1523534201555
+>>>>>>> 安卓练习
 quickStart=false
 tipsAndTricks=true

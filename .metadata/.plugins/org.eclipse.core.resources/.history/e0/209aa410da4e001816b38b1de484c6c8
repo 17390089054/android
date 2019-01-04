@@ -1,0 +1,47 @@
+package com.example.scrollview;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
+	private ScrollView scrollView;
+	private LinearLayout layout;
+	private int i=1;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		layout=(LinearLayout) findViewById(R.id.layout);
+		for(;i<20;i++){
+			TextView tv=new TextView(MainActivity.this);
+			tv.setText("这是TextView"+i);
+			tv.setTextSize(20);
+			layout.addView(tv);
+		}
+		
+		scrollView=(ScrollView) findViewById(R.id.scrollView1);
+		scrollView.setOnTouchListener(new OnTouchListener() {
+			
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				if(event.getAction()==MotionEvent.ACTION_MOVE){
+					int scrollY=v.getScrollY();//scrollView向上的高度
+					int Height=v.getHeight();//scrollView的高度
+					ScrollView view=v;
+					
+				}
+				
+				return false;
+			}
+		});
+	}
+
+
+}

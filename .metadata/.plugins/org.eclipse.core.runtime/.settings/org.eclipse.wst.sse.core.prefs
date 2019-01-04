@@ -1,2 +1,6 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 task-tag-projects-already-scanned=ProgressBarApplication,ProgressDialog
+=======
+task-tag-projects-already-scanned=learning,Gallery,scrollView,AlertDialog,test_apk,test_xml,test_drawable,test_notification
+>>>>>>> 安卓练习

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -33,3 +34,40 @@
 
 </RelativeLayout>
 >>>>>>> android开发
+=======
+<<<<<<< HEAD
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+	<!--@android:color/transparent： #00000000-->
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:listSelector="@android:color/transparent" 
+        android:scrollbars="none"
+        android:background="#fff"
+        
+         />
+
+</RelativeLayout>
+=======
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gridview.MainActivity" >
+
+    <GridView 
+		android:id="@+id/grid"        
+       android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:numColumns="3"
+        />
+
+</RelativeLayout>
+>>>>>>> android开发
+>>>>>>> 安卓练习
